@@ -1,0 +1,237 @@
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 95%;
+	margin: 10px auto;
+	font-family: Arial;
+	padding: 10px;
+}
+
+/* Header*/
+header{
+	padding-right: 10px;
+	background-color: rgb(245,245,245);
+	flex: 0 1 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 0.2px lightgray solid;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#abet{
+	flex: 0 1 30%;
+	align-items: center;
+	padding: 10px;
+    color: gray;
+}
+
+#profile{
+	flex: 0 1 30%;
+	text-align: right;
+	padding-right: 20px;
+}
+
+/* Change the color of the person and caret*/
+.person{
+	filter: invert(0.5) sepia(1) saturate(5) hue-rotate(180deg) brightness(60%);
+}
+
+/* Format for Navigation side bar and Content */
+#container{
+	flex: 0 1 90%;
+	display: flex;
+	flex-direction: row;
+}
+
+nav {
+	padding-top: 10px;
+	flex: 0 1 20%;
+	background-color: rgb(245,245,245);
+	border-right: 0.2px lightgray solid;
+	position: fixed;
+	top: 38px;
+	height: 100%;
+	left: 0;
+}
+
+.section{
+    padding: 10px;
+    border-bottom: 0.2px lightgray solid;
+}
+
+select{
+	background-color: white;
+	font-size: 14px;
+}
+
+#outcome{
+	color: rgb(37, 150, 190);
+	padding: 10px;
+	border-bottom: 0.2px lightgray solid;
+	font-size: 14px;
+}
+
+#outcome:hover{
+	background-color: rgb(235,235,235);
+}
+
+main{
+	padding-top: 20px;
+	flex: 0 1 80%;
+	margin-left: 200px;
+}
+
+.results{
+	padding-bottom: 80px;
+}
+
+h1 {
+	font-size: 30px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 0.2px lightgray solid;
+
+}
+
+h2{
+	font-size: 16px;
+	padding-bottom: 15px;
+	border-bottom: 0.2px lightgray solid;
+}
+
+h3{
+	font-size: 16px;
+}
+
+
+p {
+	padding-left: 10px;
+}
+
+
+div {
+	font-size: 16px;
+}
+
+#outcome-description{
+	background-color: rgb(245,245,245);
+	padding: 10px;
+	border: 0.2px lightgray solid;
+	padding-bottom: 20px;
+	border-radius: 4px;
+}
+
+.scores{
+	padding-top: 20px;
+	padding-left: 15px;
+	display: flex;
+	flex-direction: row;
+	font-size: 16px;
+}
+
+.score{
+	float: left;
+}
+
+.one, .two, .three {
+	flex: 0 1 33%;
+}
+
+.four {
+	flex: 0 1 16%;
+}
+
+input[type=number]{
+	width: 80%;
+	border-radius: 4px;
+	padding: 10px;
+	border: 0.2px gray solid;
+}
+
+input[type=submit]{
+	float: right;
+	color: white;
+	background-color: rgba(48,121,184,255);
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 0.2px white solid;
+	margin-top: 20px;
+}
+
+.assessments{
+	border-top: 0.2px lightgray solid;
+	/*padding-bottom: 100px;*/
+	padding-bottom: 80px;
+	border-bottom: 0.2px lightgray solid;
+}
+
+.assessment{
+	float: left;
+}
+.plans{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	display: flex;
+	flex-direction: row;
+	font-size: 16px;
+	border-bottom: 0.2px lightgray solid;
+}
+
+.weight {
+	flex: 0 1 20%;
+}
+
+.description{
+	flex: 0 1 70%;
+}
+
+.remove{
+	flex: 0 1 10%;
+	align-items: center;
+	/*padding-left: 10px;*/
+}
+
+#plan-description{
+	width: 97%;
+	border: 0.2px gray solid;
+	border-radius: 4px;
+}
+
+.trash{
+	background-color: rgb(0,171,171);
+	filter: invert(100) ;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+input[type=button]{
+	margin-top: 10px;
+	color: white;
+	background-color: rgba(88,185,88,255);
+	border: 0.2px gray solid;
+	border-radius: 4px;
+	padding:10px;
+}
+
+#strengths, #weaknesses, #actions{
+	padding-left: 10px;
+}
+
+#strength, #weakness, #action{
+	width: 98%;
+	border: 0.2px gray solid;
+	border-radius: 4px;
+	color: gray;
+	padding-left: 10px;
+}

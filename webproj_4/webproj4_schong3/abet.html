@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<meta name="viewport" charset="utf-8" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="abet.css">
+	
+	<title> Data Collection Page </title>
+	<body> 
+
+		<header>
+			<div id="abet"> UTK ABET </div>
+			<div id="profile"> 
+				<img src="person-fill.svg" class="person"> 
+				<img src="caret-down-fill.svg" class="person">
+			</div>
+		</header>
+
+		<div id="container">
+			<nav>
+				<div class="section">
+					<div> Section: </div>
+					<div class="custom-select">
+						<select name="sections" id="sections">
+							<option value="cosc565sp21"> COSC565 spring 2021</option>
+							<option value="cosc565fa20"> COSC565 fall 2020</option>
+							<option value="cosc565su20"> COSC565 summer 2020</option>
+						</select>
+						<span class="custom-arrow"></span>
+					</div>
+					
+				</div> 
+				
+				<div id="outcome"> Outcome 2 </div>
+				<div id="outcome"> Outcome 3 </div>
+				<div id="outcome"> Outcome 5 </div>
+				<div id="outcome"> Outcome 6 </div>
+
+			</nav>
+
+			<main>
+				<div class="results">
+					<h1>Results </h1> 
+					<p> Please enter the number of students who do not meet expectations, meet expectations, and exceed expectations. You can type directly into the boxes -- you do not need to use the arrows.</p>
+
+					<div id="outcome-description"> <strong> Outcome 2 - CS: </strong>  Design, impelement, and evaluate a computing-based solution to meet a given set of computing requirements in the context of the program's discipline.</div>
+
+					<form id="result-form">
+						<div class="scores">
+							<div class="score one"> 
+								<h2> Not Meets Expectations </h2>
+								<input type="number" name="notmeet" min="0">
+							</div>
+							<div class="score two"> 
+								<h2> Meets Expectations </h2>
+								<input type="number" name="meet" min="0">
+							</div>
+							<div class="score three"> 
+								<h2> Exceeds Expectations </h2>
+								<input type="number" name="exceed" min="0">
+							</div>
+							<div class="score total"> 
+								<h2> Total </h2>
+								180
+							</div>
+						</div>	
+					</form>
+
+					<input type="submit" value="Save Results" id="submit-result">
+					
+				</div>
+
+				<div class="assessments">
+					<h1> Assessment Plan </h1>
+					<p>
+						<ol> 
+							<li> Please enter your assessment plan for each outcome. The weights are percentages from 0-100 and the weights should add up to 100%. 
+							<li> Always press "Save Assessments" when finished, even if you removed an assessment. The trash can only remove an assessment from this screen-it does not remove it from the database until you press "Save Assessments". 
+						</ol>
+					</p>
+
+					<form id="assessment-form">
+						<!-- Row 1 -->
+						<div class="plans">
+							<div class="assessment weight"> 
+								<h2> Weights (%) </h2>
+								<input type="number" name="weight" min="0" max="100">
+							</div>
+							<div class="assessment description"> 
+								<h2> Description </h2>
+								<!-- <input type="text" name="description"> -->
+								<textarea id="plan-description" maxlength="400" rows="4"> </textarea>
+							</div>
+							<div class="assessment remove"> 
+								<h2> Remove </h2>
+								<img src="trash.svg" class="trash"> 
+							</div>
+						</div>	
+						<!-- Row 2 -->
+						<div class="plans">
+							<div class="assessment weight"> 
+								<input type="number" name="weight" min="0" max="100">
+							</div>
+							<div class="assessment description"> 
+								<textarea id="plan-description" maxlength="400" rows="4"> </textarea>
+							</div>
+							<div class="assessment remove"> 
+								<img src="trash.svg" class="trash"> 
+							</div>
+						</div>
+						<!-- Row 3 -->
+						<div class="plans">
+							<div class="assessment weight"> 
+								<input type="number" name="weight" min="0" max="100">
+							</div>
+							<div class="assessment description"> 
+								<textarea id="plan-description" maxlength="400" rows="4"> </textarea>
+							</div>
+							<div class="assessment remove"> 
+								<img src="trash.svg" class="trash"> 
+							</div>
+						</div>
+						<!-- Row 4 -->
+						<div class="plans">
+							<div class="assessment weight"> 
+								<input type="number" name="weight" min="0" max="100">
+							</div>
+							<div class="assessment description"> 
+								<textarea id="plan-description" maxlength="400" rows="4"> </textarea>
+							</div>
+							<div class="assessment remove"> 
+								<img src="trash.svg" class="trash"> 
+							</div>
+						</div>
+
+						<div>
+							<input type="button" name="add" value="+New"> 
+						</div>
+
+						<div>
+							<input type="submit" value="Save Assessments" id="submit-assessments">
+						</div>
+					</form>
+					
+				</div>
+				
+				<div class="narratives">
+					<h1> Narrative Summary</h1>
+					<p> Please enter your narrative for each outcome, including the student strength for the outcome, student weaknesses for the outcome, and suggested action for improving student attainment of each outcome. </p>
+
+					<div id="strengths">
+						<h3> Strengths</h3>
+						<div class="strength description"> 
+							<textarea id="strength" maxlength="2000" rows="4" placeholder="None"></textarea>
+						</div>
+					</div>
+
+					<div id="weaknesses">
+						<h3> Weaknesses </h3>
+						<div class="weakness description"> 
+							<textarea id="weakness" maxlength="2000" rows="4" placeholder="None"></textarea>
+						</div>
+					</div>
+
+					<div id="actions">
+						<h3> Actions </h3>
+						<div class="action description"> 
+							<textarea id="action" maxlength="2000" rows="4" placeholder="None"></textarea>
+						</div>
+					</div>
+
+					<div>
+						<input type="submit" value="Save Narrative " id="submit-narratives">
+					</div>
+				</div>
+
+			</main>
+		</div>
+
+	</body>
+</html>
